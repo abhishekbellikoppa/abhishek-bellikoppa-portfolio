@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Abhishek Bellikoppa · SOC Analyst</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f8f6f1;--card:#fff;--ink:#12394a;--mut:#4a5f6b;--teal:#2a7065;--tint:#e3efec;--amber:#b36b00;--gold:#f0b13f;--line:#e6e2d8;--on:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e161a;--card:#16232a;--ink:#eef3f2;--mut:#a7b8bd;--teal:#5fc4b2;--tint:#1c3037;--amber:#f0b13f;--line:#26363d;--on:#0e161a}}
+:root[data-theme="dark"]{--bg:#0e161a;--card:#16232a;--ink:#eef3f2;--mut:#a7b8bd;--teal:#5fc4b2;--tint:#1c3037;--amber:#f0b13f;--line:#26363d;--on:#0e161a}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Poppins,system-ui,sans-serif;line-height:1.6}
+.w{max-width:1080px;margin:0 auto;padding:0 20px}
+.hand{font-family:Caveat,cursive;color:var(--amber);font-weight:600}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5;border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;flex-wrap:wrap}
+.logo{font-size:1.5rem;text-decoration:none;color:var(--ink)}.logo b{color:var(--teal)}
+nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--ink);font-size:.9rem}nav ul a:hover{color:var(--teal)}
+.btn{display:inline-block;background:var(--teal);color:var(--on);padding:10px 20px;border-radius:8px;font-weight:600;text-decoration:none;border:1px solid var(--teal);cursor:pointer;font:inherit;font-weight:600}
+.btn.o{background:transparent;color:var(--teal)}
+section{padding:72px 0}
+h2{font-size:2.2rem;margin:0 0 28px;line-height:1.2}h2 .hand{font-size:2.5rem}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;min-height:70vh}
+.hero h1{font-size:3.2rem;line-height:1.1;margin:0 0 16px;color:var(--amber)}
+.hero .hi{font-size:2.2rem}
+.hero p{color:var(--mut);max-width:460px}
+.photo{width:min(340px,80vw);aspect-ratio:1;border-radius:50%;border:5px solid var(--gold);background:var(--card);display:grid;place-items:center;font-size:4rem;font-weight:700;color:var(--teal);margin:auto}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.chip{background:var(--tint);color:var(--teal);padding:4px 14px;border-radius:99px;font-size:.82rem;font-weight:500}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:var(--card);border-radius:18px;padding:24px;box-shadow:0 6px 24px rgba(0,0,0,.06);border:1px solid var(--line)}
+.card h3{margin:0 0 8px;color:var(--teal);font-size:1.1rem}.card p{margin:0;color:var(--mut);font-size:.92rem}
+.about{display:grid;grid-template-columns:1fr 1.4fr;gap:40px;align-items:center}
+.stat{font-size:2.6rem;font-weight:700;color:var(--teal);line-height:1}
+details{margin-top:14px}summary{cursor:pointer;font-weight:600;color:var(--teal)}
+details ol{color:var(--mut);font-size:.9rem;padding-left:20px;margin:10px 0 0}
+.tl{border-left:6px solid var(--gold)}.tl small{color:var(--teal);font-weight:600;letter-spacing:.04em}
+.tl ul{color:var(--mut);font-size:.92rem;padding-left:18px}
+.cert{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.cert b{color:var(--teal)}
+form{display:grid;gap:12px}
+label{font-weight:600;font-size:.85rem}
+input,textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.contact dt{color:var(--teal);font-weight:600;margin-top:14px}.contact dd{margin:0;color:var(--mut);word-break:break-all}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--mut);font-size:.88rem}
+footer .w{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}footer a{color:var(--mut);margin-left:14px}
+@media(max-width:760px){.hero,.about,.contact{grid-template-columns:1fr}.hero h1{font-size:2.4rem}.hero{text-align:center}.hero p{margin:0 auto 16px}.chips{justify-content:center}nav ul{display:none}}
+</style>
+</head>
+<body>
+<header><div class="w"><nav>
+<a class="logo" href="#home"><b>A</b>bhi.</a>
+<ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li><li><a href="#contact">Contact</a></li></ul>
+<a class="btn" href="#contact">Hire me</a>
+</nav></div></header>
+
+<main class="w">
+<section id="home" class="hero">
+<div>
+<div class="hand hi">Hey! I am</div>
+<h1>Abhishek Bellikoppa.</h1>
+<p>Entry-level SOC Analyst. I monitor, triage and investigate threats with Splunk, Wazuh and IBM QRadar.</p>
+<div class="chips"><span class="chip">Splunk</span><span class="chip">Wazuh</span><span class="chip">QRadar</span><span class="chip">MITRE ATT&amp;CK</span></div>
+<a class="btn" href="#projects">View projects</a> <a class="btn o" href="#contact">Get in touch</a>
+</div>
+<div class="photo" role="img" aria-label="Photo placeholder">AB</div>
+</section>
+
+<section id="about">
+<h2>About <span class="hand">me</span></h2>
+<div class="about">
+<div><div class="stat">03</div><p style="margin:4px 0 0;color:var(--mut);font-weight:600;font-size:.85rem">SIEM PLATFORMS, HANDS-ON</p></div>
+<div>
+<p style="color:var(--mut)">Entry-level SOC Analyst with hands-on SIEM monitoring using Splunk, Wazuh and IBM QRadar through a virtual SOC lab. Skilled in alert triage, log analysis, phishing and malware analysis, and threat detection using the MITRE ATT&amp;CK framework.</p>
+<div class="grid">
+<div class="card"><h3>MCA</h3><p>Brindavan Group of Institutions<br>2024 – 2026 · CGPA 8.2</p></div>
+<div class="card"><h3>BCA</h3><p>KLE Society J.T. BCA College<br>2021 – 2024 · CGPA 8.1</p></div>
+</div></div></div>
+</section>
+
+<section id="skills">
+<h2>What <span class="hand">I do</span></h2>
+<div class="grid">
+<div class="card"><h3>SIEM Monitoring</h3><p>Alert triage, log analysis and event correlation in Splunk, Wazuh and QRadar.</p></div>
+<div class="card"><h3>Phishing &amp; Malware Analysis</h3><p>Email header checks (SPF, DKIM, DMARC) and sandbox analysis with ANY.RUN and Hybrid Analysis.</p></div>
+<div class="card"><h3>Incident Documentation</h3><p>Triage, investigation and response write-ups with remediation steps.</p></div>
+</div>
+<div class="chips" style="margin-top:24px"><span class="chip">VirusTotal</span><span class="chip">Wireshark</span><span class="chip">Nmap</span><span class="chip">pfSense</span><span class="chip">Metasploit</span><span class="chip">Hydra</span><span class="chip">Kali Linux</span><span class="chip">Windows</span><span class="chip">Python (basic)</span><span class="chip">HTML · CSS · JS</span></div>
+</section>
+
+<section id="projects">
+<h2>My <span class="hand">projects</span></h2>
+<div class="grid">
+<div class="card"><h3>SIEM Home Lab</h3><p>Splunk Universal Forwarder and Wazuh for log collection and detection, with custom Wazuh rules and SSH brute-force alerts.</p>
+<div class="chips"><span class="chip">Splunk</span><span class="chip">Wazuh</span><span class="chip">Kali Purple</span></div></div>
+<div class="card"><h3>Phishing Email Analysis</h3><p>Analyzed SPF, DKIM and DMARC headers to find spoofing; investigated links and attachments, mapped to MITRE T1566.001.</p>
+<div class="chips"><span class="chip">MXToolbox</span><span class="chip">VirusTotal</span><span class="chip">Hybrid Analysis</span></div></div>
+<div class="card"><h3>Razz SOC Virtual Lab</h3><p>Full SOC lab with Windows Server 2022, Active Directory, Kali, Splunk, Wazuh and QRadar; simulated attacks to validate detections.</p>
+<div class="chips"><span class="chip">QRadar</span><span class="chip">Hydra</span><span class="chip">Metasploit</span></div>
+<details><summary>View details →</summary><ol><li>Build the lab: Windows Server 2022, Kali, Splunk, Wazuh, QRadar.</li><li>Control access with Active Directory.</li><li>Simulate brute-force, DoS/DDoS and unauthorized access using Hydra and Metasploit.</li><li>Monitor alerts, build dashboards, write incident reports.</li></ol></details></div>
+</div>
+</section>
+
+<section id="experience">
+<h2>Experience &amp; <span class="hand">certifications</span></h2>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+<div class="card tl"><small>JUNE 2026 – JULY 2026</small><h3 style="color:var(--ink);font-size:1.3rem;margin-top:4px">SOC Analyst Training Program</h3><p>Razz Security Academy · SOC Virtual Lab</p>
+<ul><li>Deployed a SOC lab with Windows Server 2022, Kali, Splunk, Wazuh, QRadar and Active Directory</li><li>Built Splunk dashboards for attack visibility</li><li>Simulated brute-force, DoS/DDoS and unauthorized access attacks</li><li>Malware and phishing analysis; documented incidents with remediation</li></ul></div>
+<div class="card"><h3 style="color:var(--ink)">Certifications</h3>
+<div class="cert"><span>SOC Analyst Training</span><b>Razz Security</b></div>
+<div class="cert"><span>Splunk Fundamentals 1</span><b>Splunk</b></div>
+<div class="cert"><span>Introduction to Cybersecurity</span><b>Cisco</b></div>
+<div class="cert"><span>Networking Essentials</span><b>Cisco</b></div>
+<div class="cert"><span>NSE 1 Network Security Associate</span><b>Fortinet</b></div>
+<div class="cert"><span>AI Fundamentals</span><b>IBM</b></div></div>
+</div>
+</section>
+
+<section id="contact">
+<div class="contact">
+<div>
+<div class="hand" style="font-size:2rem">Let’s work together</div>
+<h2 style="margin-bottom:12px">Get in <span class="hand">touch</span></h2>
+<p style="color:var(--mut)">Open to SOC Analyst roles. Send a message and I will reply.</p>
+<dl><dt>Email</dt><dd>abhishekbellikoppa819@gmail.com</dd><dt>Phone</dt><dd>+91-8197438545</dd><dt>LinkedIn</dt><dd><a href="https://linkedin.com/in/abhishek-bellikoppa-a0893927a" style="color:var(--mut)">linkedin.com/in/abhishek-bellikoppa-a0893927a</a></dd></dl>
+</div>
+<div class="card"><form id="f">
+<div><label for="n">Name</label><input id="n" required></div>
+<div><label for="e">Email</label><input id="e" type="email" required></div>
+<div><label for="m">Message</label><textarea id="m" rows="4" required></textarea></div>
+<button class="btn" type="submit" style="width:100%">Send message</button>
+</form></div>
+</div>
+</section>
+</main>
+
+<footer><div class="w"><span>© Abhishek Bellikoppa</span><span><a href="https://linkedin.com/in/abhishek-bellikoppa-a0893927a">LinkedIn</a><a href="mailto:abhishekbellikoppa819@gmail.com">Email</a></span></div></footer>
+
+<script>
+document.getElementById('f').addEventListener('submit',function(ev){
+ev.preventDefault();
+var n=document.getElementById('n').value,e=document.getElementById('e').value,m=document.getElementById('m').value;
+location.href='mailto:abhishekbellikoppa819@gmail.com?subject='+encodeURIComponent('Portfolio message from '+n)+'&body='+encodeURIComponent(m+'\n\n'+n+' ('+e+')');
+});
+</script>
+</body>
+</html>
