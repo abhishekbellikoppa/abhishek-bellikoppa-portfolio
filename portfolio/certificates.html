@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Certificates · Abhishek Bellikoppa</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f8f6f1;--card:#fff;--ink:#12394a;--mut:#4a5f6b;--teal:#2a7065;--tint:#e3efec;--amber:#b36b00;--gold:#f0b13f;--line:#e6e2d8;--on:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e161a;--card:#16232a;--ink:#eef3f2;--mut:#a7b8bd;--teal:#5fc4b2;--tint:#1c3037;--amber:#f0b13f;--line:#26363d;--on:#0e161a}}
+:root[data-theme="dark"]{--bg:#0e161a;--card:#16232a;--ink:#eef3f2;--mut:#a7b8bd;--teal:#5fc4b2;--tint:#1c3037;--amber:#f0b13f;--line:#26363d;--on:#0e161a}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Poppins,system-ui,sans-serif;line-height:1.6}
+.w{max-width:1080px;margin:0 auto;padding:0 20px}
+.hand{font-family:Caveat,cursive;color:var(--amber);font-weight:600}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5;border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;flex-wrap:wrap}
+.logo{font-size:1.5rem;text-decoration:none;color:var(--ink)}.logo b{color:var(--teal)}
+nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--ink);font-size:.9rem}nav ul a:hover{color:var(--teal)}
+.btn{display:inline-block;background:var(--teal);color:var(--on);padding:10px 20px;border-radius:8px;font-weight:600;text-decoration:none;border:1px solid var(--teal);cursor:pointer;font:inherit;font-weight:600}
+.btn.o{background:transparent;color:var(--teal)}
+section{padding:72px 0}
+h2{font-size:2.2rem;margin:0 0 28px;line-height:1.2}h2 .hand{font-size:2.5rem}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;min-height:70vh}
+.hero h1{font-size:3.2rem;line-height:1.1;margin:0 0 16px;color:var(--amber)}
+.hero .hi{font-size:2.2rem}
+.hero p{color:var(--mut);max-width:460px}
+.photo{position:relative;overflow:hidden;width:min(340px,80vw);aspect-ratio:1;border-radius:50%;border:5px solid var(--gold);background:var(--card);display:grid;place-items:center;font-size:4rem;font-weight:700;color:var(--teal);margin:auto}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.chip{background:var(--tint);color:var(--teal);padding:4px 14px;border-radius:99px;font-size:.82rem;font-weight:500}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:var(--card);border-radius:18px;padding:24px;box-shadow:0 6px 24px rgba(0,0,0,.06);border:1px solid var(--line)}
+.card h3{margin:0 0 8px;color:var(--teal);font-size:1.1rem}.card p{margin:0;color:var(--mut);font-size:.92rem}
+.about{display:grid;grid-template-columns:1fr 1.4fr;gap:40px;align-items:center}
+.stat{font-size:2.6rem;font-weight:700;color:var(--teal);line-height:1}
+details{margin-top:14px}summary{cursor:pointer;font-weight:600;color:var(--teal)}
+details ol{color:var(--mut);font-size:.9rem;padding-left:20px;margin:10px 0 0}
+.tl{border-left:6px solid var(--gold)}.tl small{color:var(--teal);font-weight:600;letter-spacing:.04em}
+.tl ul{color:var(--mut);font-size:.92rem;padding-left:18px}
+.cert{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.cert b{color:var(--teal)}
+form{display:grid;gap:12px}
+label{font-weight:600;font-size:.85rem}
+input,textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.contact dt{color:var(--teal);font-weight:600;margin-top:14px}.contact dd{margin:0;color:var(--mut);word-break:break-all}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--mut);font-size:.88rem}
+footer .w{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}footer a{color:var(--mut);margin-left:14px}
+@media(max-width:760px){.hero,.about,.contact{grid-template-columns:1fr}.hero h1{font-size:2.4rem}.hero{text-align:center}.hero p{margin:0 auto 16px}.chips{justify-content:center}nav ul{display:none}}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}a.cert{color:inherit;text-decoration:none}a.cert:hover span{color:var(--teal)}
+</style><style>
+.cw{display:grid;grid-template-columns:320px 1fr;gap:24px;align-items:start}
+.list{display:grid;gap:10px}
+.item{display:flex;justify-content:space-between;align-items:center;gap:10px;width:100%;text-align:left;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font:inherit;cursor:pointer}
+.item small{display:block;color:var(--mut);font-size:.78rem}
+.item b{color:var(--teal);font-size:.8rem}
+.item:hover,.item.on{border-color:var(--teal);background:var(--tint)}
+.view h3{margin:0;color:var(--ink);font-size:1.3rem}.view .by{color:var(--teal);font-weight:600;margin:2px 0 14px}
+.frame{width:100%;height:70vh;border:1px solid var(--line);border-radius:12px;background:var(--bg)}
+.view img{max-width:100%;border:1px solid var(--line);border-radius:12px;display:block;margin:auto}
+.dl{margin-top:16px;text-align:center}
+.msg{color:var(--mut);padding:40px 10px;text-align:center}
+@media(max-width:760px){.cw{grid-template-columns:1fr}.frame{height:60vh}}
+</style>
+</head>
+<body>
+<header><div class="w"><nav>
+<a class="logo" href="index.html"><b>A</b>bhi.</a>
+<ul><li><a href="index.html#home">Home</a></li><li><a href="index.html#about">About</a></li><li><a href="index.html#projects">Projects</a></li><li><a href="index.html#experience">Experience</a></li><li><a href="index.html#contact">Contact</a></li></ul>
+<a class="btn o" href="index.html">← Back to home</a>
+</nav></div></header>
+<main class="w"><section>
+<h2>My <span class="hand">certificates</span></h2>
+<p style="color:var(--mut);margin:-12px 0 24px">Click a certificate name to view it. You can download it below the preview.</p>
+<div class="cw"><div class="list" id="list"></div><div class="card view" id="view"><div class="msg">Select a certificate to preview it.</div></div></div>
+</section></main>
+<footer><div class="w"><span>© Abhishek Bellikoppa</span><span><a href="index.html">Home</a></span></div></footer>
+<script>
+var C=[
+{id:"soc-analyst-training",t:"SOC Analyst Training",by:"Razz Security Academy"},
+{id:"splunk-fundamentals-1",t:"Splunk Fundamentals 1",by:"Splunk"},
+{id:"intro-cybersecurity",t:"Introduction to Cybersecurity",by:"Cisco"},
+{id:"networking-essentials",t:"Networking Essentials",by:"Cisco"},
+{id:"fortinet-nse1",t:"NSE 1 Network Security Associate",by:"Fortinet"},
+{id:"ibm-ai-fundamentals",t:"AI Fundamentals",by:"IBM"}];
+var EXT=[".pdf",".png",".jpg",".jpeg"];
+var list=document.getElementById("list"),view=document.getElementById("view");
+C.forEach(function(c,i){var b=document.createElement("button");b.className="item";b.id="b-"+c.id;
+b.innerHTML="<span>"+c.t+"<small>"+c.by+"</small></span><b>View</b>";
+b.onclick=function(){location.hash=c.id;show(i)};list.appendChild(b)});
+async function find(id){for(var k=0;k<EXT.length;k++){var u="certificates/"+id+EXT[k];
+try{var r=await fetch(u,{method:"HEAD"});if(r.ok)return u}catch(e){}}return null}
+async function show(i){var c=C[i];
+document.querySelectorAll(".item").forEach(function(x){x.classList.toggle("on",x.id==="b-"+c.id)});
+view.innerHTML='<div class="msg">Loading…</div>';
+var u=await find(c.id),h='<h3>'+c.t+'</h3><div class="by">'+c.by+'</div>';
+if(!u){view.innerHTML=h+'<div class="msg">Certificate file not added yet.</div>';return}
+var ext=u.slice(u.lastIndexOf("."));
+h+=ext===".pdf"?'<iframe class="frame" src="'+u+'" title="'+c.t+'"></iframe>':'<img src="'+u+'" alt="'+c.t+' certificate">';
+h+='<div class="dl"><a class="btn" href="'+u+'" download="'+c.t.replace(/[^A-Za-z0-9]+/g,"_")+ext+'">Download certificate</a></div>';
+view.innerHTML=h}
+var s=C.findIndex(function(c){return c.id===location.hash.slice(1)});if(s>-1)show(s);
+</script>
+</body>
+</html>
